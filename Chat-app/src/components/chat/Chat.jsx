@@ -148,7 +148,7 @@ const Chat = () => {
       <div className="center">
         {chat ? (
           chat.messages.map((message, index) => (
-            <div className={`message ${message.own ? "own" : ""}`} key={index}>
+            <div className={`message${message.own ? "own" : ""}`} key={index}>
               {!message.own && <img src="./avatar.png" alt="" />}
               <div className="texts">
                 {message.image && <img src={message.image} alt="" />}
